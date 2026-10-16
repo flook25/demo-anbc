@@ -6,6 +6,6 @@ export const company = {
   phone: "063-658-5937",
   phoneHref: "tel:+66636585937",
   // TODO: replace placeholders with real contact channels
-  email: "sales@your-domain.com",
-  lineId: "@your-line-id",
+  email: "anbcsale@gmail.com",
+  lineId: "@anbcsmart",
 } as const;

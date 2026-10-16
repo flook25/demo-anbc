@@ -53,7 +53,10 @@ export default async function LocaleLayout({
       lang={locale === "zh" ? "zh-CN" : "th"}
       className={`${notoThai.variable} ${notoSC.variable} antialiased`}
     >
-      <body className="min-h-screen bg-white font-sans text-slate-800">
+      <body 
+        className="min-h-screen bg-white font-sans text-slate-800"
+        suppressHydrationWarning
+      >
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
