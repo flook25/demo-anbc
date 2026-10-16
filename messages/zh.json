@@ -1,0 +1,100 @@
+{
+  "Metadata": {
+    "title": "ANBC Smart Technology | 工业机器人、自动化零部件与PLC系统",
+    "description": "在泰国进口、分销及安装工业机器人、自动化零部件与PLC控制系统，为工厂提供一站式自动化解决方案。"
+  },
+  "Nav": {
+    "solutions": "解决方案",
+    "why": "选择我们",
+    "process": "服务流程",
+    "contact": "联系我们",
+    "cta": "咨询工程师",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "language": "选择语言"
+  },
+  "Hero": {
+    "badge": "春武里府自动化设备进口与安装服务商",
+    "title": "一站式自动化解决方案",
+    "subtitle": "进口、分销与安装工业机器人、自动化零部件及PLC控制系统，工程师团队从方案设计到售后服务全程支持。",
+    "primaryCta": "咨询工程师",
+    "secondaryCta": "查看产品",
+    "trust": {
+      "import": "厂家直接进口",
+      "engineers": "工程师现场安装",
+      "support": "完善售后支持"
+    }
+  },
+  "Features": {
+    "eyebrow": "核心业务",
+    "title": "产线所需，一站配齐",
+    "subtitle": "从机器人本体、零部件，到控制柜与维护保养",
+    "learnMore": "咨询详情",
+    "items": {
+      "robots": {
+        "title": "工业机器人",
+        "description": "六轴机械臂、SCARA及协作机器人，适用于搬运、焊接、喷涂与包装，提供安装与编程调试。"
+      },
+      "parts": {
+        "title": "自动化零部件",
+        "description": "伺服电机、驱动器、传感器、夹爪及原装备件，直接进口，现货供应。"
+      },
+      "plc": {
+        "title": "PLC与控制系统",
+        "description": "PLC、HMI与SCADA控制柜的设计、编程与安装，实现整线设备互联。"
+      },
+      "service": {
+        "title": "维护与售后支持",
+        "description": "预防性维护、维修及工程师技术支持，减少设备停机时间。"
+      }
+    }
+  },
+  "Why": {
+    "eyebrow": "为什么选择 ANBC",
+    "title": "值得工厂信赖的自动化合作伙伴",
+    "subtitle": "我们深知每一分钟停机都是成本，因此专注于速度、准确与长期服务。",
+    "items": {
+      "import": {
+        "title": "厂家直接进口",
+        "description": "无中间环节，价格更具竞争力，正品来源可追溯。"
+      },
+      "delivery": {
+        "title": "快速交付",
+        "description": "公司位于春武里府，毗邻东部经济走廊（EEC）工业区，快速送达工厂。"
+      },
+      "consulting": {
+        "title": "工程技术咨询",
+        "description": "工程师现场评估，协助设备选型与系统规划，量身匹配您的产线。"
+      }
+    },
+    "process": {
+      "title": "我们的服务流程",
+      "steps": {
+        "consult": "需求沟通与现场勘察",
+        "design": "方案设计与报价",
+        "install": "安装与调试运行",
+        "support": "培训与售后维护"
+      }
+    }
+  },
+  "Contact": {
+    "title": "准备好升级您的产线了吗？",
+    "subtitle": "告诉我们您的需求，工程师将尽快联系您并提供方案与报价。",
+    "call": "致电我们",
+    "email": "发送邮件"
+  },
+  "Footer": {
+    "about": "工业机器人、自动化零部件及PLC系统的进口、分销与安装服务商。",
+    "addressLabel": "地址",
+    "address": "88/91 Moo 1, Nong Bon Daeng Subdistrict, Ban Bueng District, Chonburi 20170, Thailand",
+    "taxIdLabel": "税号",
+    "contactLabel": "联系方式",
+    "phoneLabel": "电话",
+    "emailLabel": "邮箱",
+    "lineLabel": "LINE",
+    "hoursLabel": "营业时间",
+    "hours": "周一至周六 08:00–17:30",
+    "linksLabel": "导航",
+    "rights": "版权所有"
+  }
+}
