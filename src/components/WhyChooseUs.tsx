@@ -1,11 +1,14 @@
 import { useTranslations } from "next-intl";
-import { Ship, Truck, UserCog } from "lucide-react";
+import { Award, ShieldCheck, Ship, Truck, UserCog } from "lucide-react";
 
 const reasons = [
+  { key: "experience", icon: Award },
   { key: "import", icon: Ship },
   { key: "delivery", icon: Truck },
   { key: "consulting", icon: UserCog },
 ] as const;
+
+const certifications = ["ISO9001", "PSE", "ETL", "CE", "CQC"] as const;
 
 const steps = ["consult", "design", "install", "support"] as const;
 
@@ -41,6 +44,26 @@ export default function WhyChooseUs() {
               </li>
             ))}
           </ul>
+
+          <div className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+            <h3 className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-brand-900">
+              <ShieldCheck className="size-5 text-accent-600" aria-hidden />
+              {t("certs.title")}
+            </h3>
+            <ul className="mt-4 flex flex-wrap gap-2">
+              {certifications.map((cert) => (
+                <li
+                  key={cert}
+                  className="rounded-md border border-brand-200 bg-white px-3 py-1.5 font-mono text-sm font-bold text-brand-700"
+                >
+                  {cert}
+                </li>
+              ))}
+              <li className="rounded-md border border-accent-400/40 bg-accent-400/15 px-3 py-1.5 text-sm font-bold text-accent-600">
+                {t("certs.patents")}
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div

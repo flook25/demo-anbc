@@ -3,11 +3,11 @@ import {
   ArrowRight,
   Bot,
   Cpu,
+  Factory,
   HardHat,
   PackageCheck,
+  ScanEye,
   ShieldCheck,
-  Wrench,
-  Cog,
 } from "lucide-react";
 
 export default function Hero() {
@@ -22,13 +22,36 @@ export default function Hero() {
 
   const modules = [
     { icon: Bot, label: f("robots.title"), status: "RUN" },
-    { icon: Cog, label: f("parts.title"), status: "OK" },
-    { icon: Cpu, label: f("plc.title"), status: "RUN" },
-    { icon: Wrench, label: f("service.title"), status: "24/7" },
+    { icon: Factory, label: f("injection.title"), status: "OK" },
+    { icon: Cpu, label: f("cnc.title"), status: "RUN" },
+    { icon: ScanEye, label: f("inspection.title"), status: "OK" },
   ];
 
   return (
     <section className="relative overflow-hidden bg-brand-950 text-white">
+      {/* Background demo video from public/video/. Decorative, so it's hidden
+          from screen readers and skipped for users who prefer reduced motion. */}
+      <video
+        aria-hidden
+        className="absolute inset-0 size-full object-cover motion-reduce:hidden"
+        muted
+        autoPlay
+        loop
+        playsInline
+        preload="auto"
+      >
+        <source src="/video/industrial-robot-arm-demo.mp4" type="video/mp4" />
+      </video>
+      {/* Dark gradient keeps the headline readable over the footage */}
+      <div
+        aria-hidden
+        className="absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/85 to-brand-950/50"
+      />
+      <div
+        aria-hidden
+        className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-brand-950 to-transparent"
+      />
+
       {/* Engineering grid background */}
       <div
         aria-hidden

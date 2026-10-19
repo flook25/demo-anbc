@@ -21,6 +21,15 @@
 
   --font-sans: var(--font-noto-thai), var(--font-noto-sc), ui-sans-serif,
     system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+
+  /* Partner logo banner */
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 html {

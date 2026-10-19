@@ -1,8 +1,24 @@
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
-import { Clock, FileText, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import {
+  BadgeCheck,
+  Clock,
+  FileText,
+  Mail,
+  MapPin,
+  MessageCircle,
+  Phone,
+  Timer,
+  Truck,
+} from "lucide-react";
 import { company } from "@/config/company";
 import CopyrightYear from "./CopyrightYear";
+
+const pledges = [
+  { key: "response", icon: Timer },
+  { key: "onsite", icon: Truck },
+  { key: "quality", icon: BadgeCheck },
+] as const;
 
 export default function Footer() {
   const t = useTranslations("Footer");
@@ -12,12 +28,35 @@ export default function Footer() {
   const links = [
     { href: "#solutions", label: nav("solutions") },
     { href: "#why", label: nav("why") },
+    { href: "#industries", label: nav("industries") },
     { href: "#process", label: nav("process") },
     { href: "#contact", label: nav("contact") },
   ];
 
   return (
     <footer className="bg-brand-950 text-slate-300">
+      <div className="border-b border-white/10">
+        <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+          <h2 className="text-sm font-bold uppercase tracking-wider text-accent-400">
+            {t("pledge.title")}
+          </h2>
+          <ul className="mt-6 grid gap-6 sm:grid-cols-3">
+            {pledges.map(({ key, icon: Icon }) => (
+              <li key={key} className="flex items-center gap-4">
+                <div className="flex size-12 shrink-0 items-center justify-center rounded-lg bg-accent-400/15 text-accent-400">
+                  <Icon className="size-6" aria-hidden />
+                </div>
+                <div>
+                  <p className="font-mono text-2xl font-bold text-white">
+                    {t(`pledge.${key}.value`)}
+                  </p>
+                  <p className="text-sm">{t(`pledge.${key}.label`)}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:grid-cols-2 sm:px-6 lg:grid-cols-[1.4fr_1fr_1fr] lg:px-8">
         <div className="sm:col-span-2 lg:col-span-1">
           <div className="inline-block rounded-lg bg-white px-3 py-2">

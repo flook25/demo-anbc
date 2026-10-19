@@ -6,6 +6,7 @@ import { routing } from "./i18n/routing";
 export default createMiddleware(routing);
 
 export const config = {
-  // Skip API routes, Next.js internals and any file with an extension.
-  matcher: "/((?!api|trpc|_next|_vercel|.*\\..*).*)",
+  // Skip API routes, Next.js internals, static asset folders and any file
+  // with an extension, so /pictures/* and /video/* are never locale-prefixed.
+  matcher: "/((?!api|trpc|_next|_vercel|pictures|video|.*\\..*).*)",
 };
